@@ -1,5 +1,5 @@
 # RabbitMQ
-Project in events oriented programming, using RabbitMQ
+Project in event-driven programming, using RabbitMQ
 
 1. What's the project about?
 Scenario: You are building a simplified backend system for an e-commerce platform.
