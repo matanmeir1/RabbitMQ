@@ -63,32 +63,7 @@ def consume_orders():
 def get_order_details():
     """API endpoint to retrieve order details."""
 
-    # try:
-    #     print("Attempting to connect to RabbitMQ...")
-    #     connection = pika.BlockingConnection(pika.ConnectionParameters('rabbitmq'))
-    #     print("Connected to RabbitMQ.")
-    #
-    #     channel = connection.channel()
-    #     channel.exchange_declare(exchange='orders3', exchange_type='fanout', durable=True)
-    #     print("Exchange declared.")
-    #
-    #     channel.queue_declare(queue='order_queue3', durable=True)
-    #     print("Queue declared: order_queue3.")
-    #
-    #     channel.queue_bind(exchange='orders3', queue='order_queue3')
-    #     print("Queue bound to exchange: orders3.")
-    #
-    #     print("Subscribing to queue: order_queue3...")
-    #     channel.basic_consume(queue='order_queue3', on_message_callback=callback, auto_ack=True)
-    #     print("Consumer is ready. Waiting for messages...")
-    #     channel.start_consuming()
-    #
-    # except pika.exceptions.AMQPConnectionError as e:
-    #     print(f"RabbitMQ connection failed: {e}. Retrying in 5 seconds...")
-    #
-    # except Exception as e:
-    #     print(f"Unexpected error in consume_orders: {e}")
-    #
+    
 
 
     order_id = request.args.get('orderId')
